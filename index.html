@@ -13,8 +13,8 @@
   var xhr = new XMLHttpRequest()
   xhr.open('GET','/mock/cate.json',true)
   xhr.sent()
-  xhr.onload = function(data){
-    console.log(data)
+  xhr.onload = function(){
+    console.log(JSON.parse(xhr.responseText))
   }
   
   
